@@ -46,15 +46,15 @@ class Library{
 
 
         updateBook(oldName,newBook){
-          let isDeleted=false
+          let isUpdated=false
           for (let index = 0; index < this.books.length; index++) {
               if (this.books[index].name == oldName) {
                 this.books[index] = newBook
-                isDeleted="Successfully updated book"
+                isUpdated="Successfully updated book"
               }
           }
 
-          return isDeleted;
+          return isUpdated;
         }
 
 
